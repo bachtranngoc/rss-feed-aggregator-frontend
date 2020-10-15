@@ -1,0 +1,7 @@
+<div ng-repeat="provider in providers">
+  <h3>{{provider.title}}</h3>
+  <p><span><strong>Feed url: </strong></span><a ng-href={{getFeedUrl(provider.feedUrl)}}>{{getFeedUrl(provider.feedUrl)}}</a></p>
+  <p><span><strong>Latest record date: </strong></span><span>{{provider.latestRecordDate | date:'medium'}}</span></p>
+  <p><span><strong>Last update check: </strong></span><span>{{provider.lastUpdateCheck | date:'medium'}}</span></p>
+</p><span><strong>Number of records found: </strong></span><span>{{provider.recordsFound}}</span></p>
+</div>

@@ -1,0 +1,8 @@
+<div ng-repeat="feed in feeds">
+    <a ng-href={{feed.link}}><h3>{{feed.title}}</h3></a>
+    <p><em>{{feed.contentSnippet}}</em></p>
+    <p><span><strong>Publish date: </strong></span><span>{{feed.pubDate | date:'medium'}}</span></p>
+    <p><span><strong>Detected date: </strong></span><span>{{feed.detectedDate | date:'medium'}}</span></p>
+    <p><span><strong>Content provider: </strong></span><span>{{feed.feedProvider}}</span></p>
+    
+</div>
